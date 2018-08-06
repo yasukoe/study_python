@@ -46,3 +46,28 @@ print(msg.zfill(3))
 msg = 'LearningPython'
 print(msg.startswith('Python'))
 print(msg.startswith('Learning'))
+
+# insert values &s-string %i-integer %f-float
+name = 'hifi'
+score = 50
+print('name: %s, score: %i' %(name,score))
+print('name: {0}, score: {1}'.format(name,score))
+print('name: %10s, score: %5.2f' %(name, score))
+
+# upper, lower case
+test = 'HiFiWidow'
+print(test.upper())
+print(test.lower())
+
+# get the values - left/right texts
+test = 'Welcome to HiFiWidow.com'
+print('original: {0}'.format(test))
+print('---- remove welcome ------')
+test = test.lstrip('Welcome')
+print(test)
+print('---- remove .com --------')
+test = 'Welcome to HiFiWidow.com'
+test = test.rstrip('.com')
+print(test)
+
+# end
